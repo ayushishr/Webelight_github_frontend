@@ -27,7 +27,7 @@ const RepoList = () => {
                 `https://api.github.com/search/repositories?q=created:>${priorDate}&sort=stars&order=desc&page=${page}`
             )
             .then(response => {
-                // console.log(response.data.items);
+                console.log(response.data.items);
                 setRepos(response.data.items);
             })
             .catch(error => {
